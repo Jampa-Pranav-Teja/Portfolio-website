@@ -1,0 +1,1 @@
+alert('Do you want to allow focusified.com to send notifications');

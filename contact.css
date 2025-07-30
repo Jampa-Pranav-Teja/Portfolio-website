@@ -1,0 +1,30 @@
+*{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+button{
+    background-color: #00BF63;
+    border: solid;
+    padding: 7px;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+button a{
+    font-weight: bold;
+    color: white;
+}
+button:hover {
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+button:hover a {
+    color: #00BF63;
+    transition: 0.5s;
+}

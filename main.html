@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUSIFIED</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        .typing {
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid white;
+            width: fit-content;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">PRANAV TEJA <span>JAMPA</span></a></div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="./contact.html">ABOUT</a></li>
+                <li><a href="./about.html">CONTACT</a></li>
+                    <button><a href="https://t.me/+-Th2aY_XiiM2Njc1">HIRE</a></button>
+                    <button><a href="./website1/index.html">JOIN</a></button>
+            </ul>
+        </div>
+    </nav>
+    <div class="image">
+        <img src="./focusifiedportfolio.png">
+    </div>
+    <div class="text" style="margin-top: 150px;">
+        <h1>I am <span>Pranav Teja</span></h1>
+    </div>
+    <div class="texttype">
+        <h1>I am a <span class="typing" id="typed-text"></span></h1>
+    </div>
+    <p style="color: white; font-size: 1.2em; margin-left: 20px; margin-top: 30px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        Although I didn’t get into an IIT, my passion for programming stayed strong. 
+        I joined KL University with a clear goal: to land the highest placement by standing out. 
+        I scored a perfect 10 CGPA in my first semester, but soon realized I needed more than academics.<br><br> 
+        So, I launched Project Phoenix, a team of six aiming to be the best tech team in the university. 
+        We’re currently learning Full Stack Development and have completed HTML and CSS. 
+        I also practice problem-solving on CodeChef and have built a strong base in Python and C.
+    </p>
+    <script>
+        const phrases = ["Web Developer", "Graphic Designer"];
+        let currentPhrase = 0;
+        let currentChar = 0;
+        const typedText = document.getElementById("typed-text");
+
+        function type() {
+            if (currentChar <= phrases[currentPhrase].length) {
+                typedText.textContent = phrases[currentPhrase].substring(0, currentChar++);
+                setTimeout(type, 100);
+            } else {
+                setTimeout(erase, 2000);
+            }
+        }
+        function erase() {
+            if (currentChar >= 0) {
+                typedText.textContent = phrases[currentPhrase].substring(0, currentChar--);
+                setTimeout(erase, 50);
+            } else {
+                currentPhrase = (currentPhrase + 1) % phrases.length;
+                setTimeout(type, 500);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            type();
+        });
+    </script>
+</body>
+</html>

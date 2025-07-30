@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(/website1/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    top: 0;
+}
+
+span {
+    color: rgb(57, 255, 47);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+.logo {
+    width: 150px;
+}
+.logo-name {
+    font-size: 25px;
+    color: white;
+    font-weight: 700 bold;
+    font-family: Roboto;
+    cursor: pointer;
+}
+.options {
+    flex: 1;
+    color: white;
+}
+.options p {
+    display: inline-block;
+    margin-left: 70px;
+    font-family: Roboto;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.options p:hover {
+    color: rgb(57, 255, 47);
+}
+.searchbar {
+    width: 250px;
+    color: white;
+}
+
+.searchbar button {
+    font-size: 20px;
+    font-family: Roboto;
+    color: white;
+    background-color: rgb(57, 255, 47);
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.searchbar button:hover {
+    color: rgb(57, 255, 47);
+    background-color: white;
+}
+
+.main-part {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.text p {
+    font-family: Roboto;
+    color: white;
+}
+.heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 550px;
+}
+.notes {
+    margin-top: 0;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.text button {
+    font-size: 20px;
+    font-family: Roboto;
+    color: white;
+    background-color: rgb(57, 255, 47);
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.text button:hover {
+    color: rgb(57, 255, 47);
+    background-color: white;
+}
+
+.login {
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    width: 350px;
+    height: 450px;
+    margin-top: 80px;
+    margin-right: 40px;
+    text-align: center;
+    font-family: Roboto;
+    
+}
+.login * {
+    display: block;
+}
+.login button {
+    font-size: 20px;
+    font-family: Roboto;
+    color: white;
+    background-color: rgb(57, 255, 47);
+    border: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition-duration: 1s;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.login input {
+    margin-left: 17%;
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    border-bottom: 1px solid rgb(57, 255, 47);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border: solid;
+    margin-bottom: 30px;
+}
+.login p {
+    color: white;
+    
+}
+
+
+.login-with-google:hover {
+    background-color: rgb(57, 255, 47);
+    color: white;
+}

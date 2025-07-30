@@ -1,0 +1,118 @@
+*{
+    text-decoration: none;
+    margin: 0;
+}
+html {  
+    scroll-behavior: smooth;  
+}
+body{
+    background-color: black;
+}
+.navbar{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    margin: 0;
+    top: 0px;
+}
+.logo a{
+    font-size: 25px;
+    font-weight: 600;
+    color: aliceblue;    
+}
+span{
+    color: #00BF63;
+}
+
+.logo:hover a {
+    color: #00BF63;
+    transition: 1s;
+}
+.logo:hover span {
+    color: white;
+    transition: 1s;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+li a{
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+li:hover a{
+    color: #00BF63;
+    transition: 0.5s;
+}
+button{
+    background-color: #00BF63;
+    border: solid;
+    padding: 7px;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+button a{
+    font-weight: bold;
+    color: white;
+}
+button:hover {
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+button:hover a {
+    color: #00BF63;
+    transition: 0.5s;
+}
+.image {
+    margin-left: 20px;
+    margin-top: 50px;
+    float: right;
+}
+.text {
+    position: relative;
+    z-index: 10;
+    color: white;
+    margin-top: 100px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.texttype {
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.text-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.typing {
+    font-size: 50px;  /* Increased font size */
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+    animation: blink-caret 0.75s step-end infinite;
+}
